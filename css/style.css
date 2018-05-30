@@ -1,0 +1,58 @@
+/* 
+CSS Style sheet
+Ver. 2.0
+Author: Nishant Dogra
+Initial built: 09-12-2017
+Updated: 28-05-2018
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+@import url(https://use.fontawesome.com/releases/v5.0.8/css/all.css);
+
+:root {	font-size: 10px;}
+*, *::before, *::after { box-sizing: border-box;}
+body { font-family: "Open Sans", Arial, sans-serif; min-height: 100vh; background-color: #fafafa; color: #262626; padding-bottom: 30px;}
+img { display: block;}
+p { font-size: 16px; line-height: 1.5; margin-bottom: 15px;}
+.container { width:100%; max-width: 1024px; margin: 0 auto; padding: 0 20px;}
+
+.profile { padding: 30px 0;}
+.profile::after { content: ""; display: block; clear: both;}
+.profile-image { float: left; width: calc(33.333% - 10px); display: flex; justify-content: center; align-items: center;	margin-right: 30px;}
+.profile-image img { border-radius: 50%;}
+
+.profile-user-settings, .profile-stats { float: left; width: calc(66.666% - 20px);}
+.profile-user-name { display: inline-block; font-size: 32px; font-weight: 300;}
+.profile-edit-btn { display: inline-block; font-size: 14px; line-height: 1.8; border: 1px solid #dbdbdb; border-radius: 3px; padding: 0 24px; margin-left: 20px; cursor: pointer;}
+.profile-settings-btn { display: inline-block; font-size: 20px; cursor: pointer; margin-left: 10px;}
+.profile-stats { margin-top: 20px;}
+.profile-stats li { display: inline-block; font-size: 16px; line-height: 1.5; margin-right: 40px;	cursor: pointer;}
+.profile-stats li:last-of-type { margin-right: 0;}
+
+/* Gallery Section */
+.gallery { display: flex; flex-wrap: wrap; margin: -10px -10px;	padding-bottom: 30px;}
+.gallery-item { position: relative; flex: 1 0 314px; margin: 10px; color: #fff;	cursor: pointer;}
+.gallery-item:hover .gallery-item-info { display: flex; justify-content: center; align-items: center; position: absolute; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.35);}
+.gallery-item-info { display: none;}
+.gallery-item-info li { display: inline-block;}
+.gallery-item-info li a { text-decoration: none; color: #ffffff; font-size: 17px; font-weight: 600;}
+.gallery-item-type { position: absolute; top: 10px; right: 10px; font-size: 25px; text-shadow: 2xp 2px 2px rgba(0, 0, 0, 0.1);}
+.gallery-image { width: 100%; height: 100%;	object-fit: cover;}
+.referal-links { color: none;}
+.referal-links a { text-decoration: none;}
+
+/* Media Query */
+@media screen and (max-width: 767px) {
+	.profile { display: flex; flex-wrap: wrap; padding: 40px 0;}
+	.profile::after { display: none;}
+	.profile-image, .profile-user-settings, .profile-stats { float: none; width: auto;}
+	.profile-image img { width: 80px;}
+	.profile-user-settings { display: flex; flex-wrap: wrap; margin-top: 10px;}
+	.profile-user-name { font-size: 22px;}
+	.profile-edit-btn { order: 1; padding: 0; text-align: center; margin-top: 10px;}
+	.profile-edit-btn { margin-left: 0;}
+	.profile-edit-btn, .profile-stats { flex-basis: 100%;}
+	.profile-stats { order: 1; margin-top: 15px;}
+	.profile-stats ul { display: flex; text-align: center; padding: 12px 0; border-top: 1px solid #dadada; border-bottom: 1px solid #dadada;}
+	.profile-stats li { font-size: 14px; flex: 1; margin: 0;}
+}
