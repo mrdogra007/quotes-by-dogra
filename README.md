@@ -13,6 +13,7 @@ https://twitter.com/mrdogra007
 
 ## Live Preview
 http://oyephoto.in/quotes-by-dogra/
+
 https://mrdogra007.github.io/quotes-by-dogra/
 
 
