@@ -1,4 +1,4 @@
-![Quotes By Dogra](http://cloud.oyephoto.in/quotes-by-dogra/logo-icons/180.png)
+![Quotes By Dogra](http://cloud.oyephoto.in/quotes-by-dogra/logo-icons/520.png)
 
 https://mrdogra007.github.io/quotes-by-dogra/
 
