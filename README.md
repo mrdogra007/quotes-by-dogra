@@ -1,3 +1,5 @@
+![Quotes By Dogra](http://cloud.oyephoto.in/quotes-by-dogra/logo-icons/180.png)
+
 https://mrdogra007.github.io/quotes-by-dogra/
 
 ## Welcome to GitHub Pages
